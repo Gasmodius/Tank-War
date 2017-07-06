@@ -1,14 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tank&War", "Assembly-CSharp.csproj", "{B6000F11-0FE0-954D-8181-C211DB5E1753}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{B6000F11-0FE0-954D-8181-C211DB5E1753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6000F11-0FE0-954D-8181-C211DB5E1753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6000F11-0FE0-954D-8181-C211DB5E1753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6000F11-0FE0-954D-8181-C211DB5E1753}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
