@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: c6839b4875e6ef84c948733472066bd9
-timeCreated: 1499443453
+timeCreated: 1499444266
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TanqueAzul_0
+    21300002: TanqueAzul_1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -34,12 +36,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  alignment: 1
+  spritePivot: {x: 0, y: 1}
+  spriteBorder: {x: 0, y: 0, z: 640, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -58,10 +60,192 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: TanqueAzul_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 540
+        height: 540
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: TanqueAzul_1
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 50
+        width: 540
+        height: 540
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -497, y: -265}
+      - {x: -495, y: -267}
+      - {x: -495, y: -270}
+      - {x: -493, y: -272}
+      - {x: -147, y: -272}
+      - {x: -145, y: -270}
+      - {x: -145, y: -267}
+      - {x: -143, y: -265}
+      - {x: -137, y: -265}
+      - {x: -135, y: -267}
+      - {x: -135, y: -270}
+      - {x: -133, y: -272}
+      - {x: -65, y: -272}
+      - {x: -63, y: -271}
+      - {x: -62, y: -268}
+      - {x: -62, y: -264}
+      - {x: -59, y: -260}
+      - {x: -58, y: -260}
+      - {x: -54, y: -257}
+      - {x: -50, y: -257}
+      - {x: -48, y: -255}
+      - {x: -48, y: 255}
+      - {x: -50, y: 257}
+      - {x: -54, y: 258}
+      - {x: -55, y: 259}
+      - {x: -57, y: 259}
+      - {x: -61, y: 263}
+      - {x: -62, y: 268}
+      - {x: -65, y: 272}
+      - {x: -133, y: 272}
+      - {x: -135, y: 270}
+      - {x: -135, y: 267}
+      - {x: -137, y: 265}
+      - {x: -143, y: 265}
+      - {x: -145, y: 267}
+      - {x: -145, y: 270}
+      - {x: -147, y: 272}
+      - {x: -493, y: 272}
+      - {x: -495, y: 270}
+      - {x: -495, y: 268}
+      - {x: -498, y: 265}
+      - {x: -502, y: 265}
+      - {x: -504, y: 267}
+      - {x: -505, y: 270}
+      - {x: -507, y: 272}
+      - {x: -575, y: 272}
+      - {x: -577, y: 270}
+      - {x: -578, y: 264}
+      - {x: -581, y: 260}
+      - {x: -582, y: 260}
+      - {x: -584, y: 258}
+      - {x: -590, y: 257}
+      - {x: -592, y: 255}
+      - {x: -592, y: -255}
+      - {x: -590, y: -257}
+      - {x: -586, y: -257}
+      - {x: -582, y: -260}
+      - {x: -580, y: -261}
+      - {x: -580, y: -262}
+      - {x: -578, y: -264}
+      - {x: -578, y: -268}
+      - {x: -575, y: -272}
+      - {x: -507, y: -272}
+      - {x: -505, y: -270}
+      - {x: -505, y: -267}
+      - {x: -503, y: -265}
+    - - {x: 143, y: -265}
+      - {x: 145, y: -267}
+      - {x: 145, y: -270}
+      - {x: 147, y: -272}
+      - {x: 493, y: -272}
+      - {x: 495, y: -270}
+      - {x: 495, y: -267}
+      - {x: 497, y: -265}
+      - {x: 503, y: -265}
+      - {x: 505, y: -267}
+      - {x: 505, y: -270}
+      - {x: 507, y: -272}
+      - {x: 575, y: -272}
+      - {x: 577, y: -271}
+      - {x: 578, y: -268}
+      - {x: 578, y: -264}
+      - {x: 581, y: -260}
+      - {x: 582, y: -260}
+      - {x: 586, y: -257}
+      - {x: 590, y: -257}
+      - {x: 592, y: -255}
+      - {x: 592, y: 255}
+      - {x: 590, y: 257}
+      - {x: 586, y: 258}
+      - {x: 585, y: 259}
+      - {x: 583, y: 259}
+      - {x: 579, y: 263}
+      - {x: 578, y: 268}
+      - {x: 575, y: 272}
+      - {x: 507, y: 272}
+      - {x: 505, y: 270}
+      - {x: 505, y: 267}
+      - {x: 503, y: 265}
+      - {x: 497, y: 265}
+      - {x: 495, y: 267}
+      - {x: 495, y: 270}
+      - {x: 493, y: 272}
+      - {x: 147, y: 272}
+      - {x: 145, y: 270}
+      - {x: 145, y: 268}
+      - {x: 142, y: 265}
+      - {x: 138, y: 265}
+      - {x: 136, y: 267}
+      - {x: 135, y: 270}
+      - {x: 133, y: 272}
+      - {x: 65, y: 272}
+      - {x: 63, y: 270}
+      - {x: 62, y: 264}
+      - {x: 59, y: 260}
+      - {x: 58, y: 260}
+      - {x: 56, y: 258}
+      - {x: 50, y: 257}
+      - {x: 48, y: 255}
+      - {x: 48, y: -255}
+      - {x: 50, y: -257}
+      - {x: 54, y: -257}
+      - {x: 58, y: -260}
+      - {x: 60, y: -261}
+      - {x: 60, y: -262}
+      - {x: 62, y: -264}
+      - {x: 62, y: -268}
+      - {x: 65, y: -272}
+      - {x: 133, y: -272}
+      - {x: 135, y: -270}
+      - {x: 135, y: -267}
+      - {x: 137, y: -265}
   spritePackingTag: 
   userData: 
   assetBundleName: 
