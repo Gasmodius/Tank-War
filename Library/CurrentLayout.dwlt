@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
+    x: 8
+    y: 51
     width: 1366
     height: 685
   m_ShowMode: 4
@@ -339,8 +339,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 412
+    x: 8
+    y: 420
     width: 966
     height: 294
   m_SearchFilter:
@@ -354,19 +354,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Imagenes
+    - Assets/Imagenes/No usables
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Imagenes
+  - Assets/Imagenes/No usables
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Oscureo\Documents\Tank&War
+  m_LastProjectPath: C:\Users\Luis\Documents\GitHub\Tank-War
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3e250000
-    m_LastClickedID: 9534
-    m_ExpandedIDs: 00000000b42400003e25000000ca9a3bffffff7f
+    m_SelectedIDs: bc250000
+    m_LastClickedID: 9660
+    m_ExpandedIDs: 000000003e250000c625000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -394,7 +394,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b42400003e250000
+    m_ExpandedIDs: 000000003e250000c6250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -471,8 +471,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 970
-    y: 92
+    x: 978
+    y: 100
     width: 396
     height: 614
   m_ScrollPosition: {x: 0, y: 0}
@@ -504,15 +504,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 92
+    x: 8
+    y: 100
     width: 290
     height: 299
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: e2fbffff000000009a250000
+    m_SelectedIDs: 02260000
+    m_LastClickedID: 9730
+    m_ExpandedIDs: 4cfbffff00000000022600001c26000036260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -557,8 +557,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 294
-    y: 92
+    x: 302
+    y: 100
     width: 363
     height: 299
   m_SceneLighting: 1
@@ -596,9 +596,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.3377041
+    m_Target: 8.245081
     speed: 2
-    m_Value: 1.3377041
+    m_Value: 8.245081
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -631,8 +631,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 661
-    y: 92
+    x: 669
+    y: 100
     width: 305
     height: 299
   m_MaximizeOnPlay: 0
