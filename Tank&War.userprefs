@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\balascript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\tanquescript.cs">
     <Files>
-      <File FileName="Assets\Scripts\balascript.cs" Line="16" Column="41" />
+      <File FileName="Assets\Scripts\balascript.cs" Line="13" Column="17" />
+      <File FileName="Assets\Scripts\tanquescript.cs" Line="21" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
