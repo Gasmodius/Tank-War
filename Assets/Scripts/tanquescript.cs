@@ -13,11 +13,11 @@ public class tanquescript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		disparar ();
 	}
 
 	public void disparar(){
-		Instantiate (municion, transform.position, Quaternion.identity);
+		Instantiate (municion, transform.position, transform.rotation);
 
 	}
 }
