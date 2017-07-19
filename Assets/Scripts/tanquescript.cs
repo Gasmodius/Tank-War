@@ -5,7 +5,9 @@ using UnityEngine;
 public class tanquescript : MonoBehaviour {
 
 	public GameObject municion;
-	public float i;
+
+	public float posx;
+	public float posy;
 
 	// Use this for initialization
 	void Start () {
@@ -16,9 +18,15 @@ public class tanquescript : MonoBehaviour {
 	void Update () {
 		//disparar ();
 	}
-	//Falta descomentar el i y poner donde x y los valores de posicion del tanque
+
+
 	public void disparar(){
-		//Instantiate (municion, transform.position, );
-		//i=Vector2.Angle(new Vector2(x, y),new Vector2(Input.mousePosition.x,Input.mousePosition.y));
+
+		float angulo =Vector2.Angle(new Vector2(transform.position.x, transform.position.y), new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+		posx = Input.mousePosition.x;
+		posy = Input.mousePosition.y;
+		transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo )) ;
+		
+		Instantiate (municion, transform.position,transform.rotation );
 	}
 }

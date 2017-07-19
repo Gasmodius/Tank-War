@@ -18,7 +18,7 @@ public class balascript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		float velocidadpro = velocidad * Time.deltaTime;
+		//float velocidadpro = velocidad * Time.deltaTime;
 		transform.Translate (Vector2.up*velocidad);
 	}
 }

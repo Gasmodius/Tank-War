@@ -465,6 +465,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   municion: {fileID: 1139999069047374, guid: 10bda89abdc5f40408099f8daf16ebea, type: 2}
+  posx: 0
+  posy: 0
 --- !u!1 &997285892
 GameObject:
   m_ObjectHideFlags: 0
