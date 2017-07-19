@@ -230,7 +230,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -283,7 +283,7 @@ RectTransform:
   m_GameObject: {fileID: 719870562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0185185, y: 0.0185185, z: 1}
+  m_LocalScale: {x: 0.37, y: 0.37, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -328,7 +328,7 @@ RectTransform:
   m_GameObject: {fileID: 790306570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0185185, y: 0.0185185, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -441,7 +441,7 @@ RectTransform:
   m_GameObject: {fileID: 970234184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0185185, y: 0.0185185, z: 1}
+  m_LocalScale: {x: 0.037, y: 0.037, z: 1}
   m_Children:
   - {fileID: 1367859793}
   - {fileID: 1139744265}
@@ -450,7 +450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -2}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970234186
@@ -465,6 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   municion: {fileID: 1139999069047374, guid: 10bda89abdc5f40408099f8daf16ebea, type: 2}
+  velocidad: 0.1
   posx: 0
   posy: 0
 --- !u!1 &997285892
@@ -768,7 +769,7 @@ RectTransform:
   m_GameObject: {fileID: 2145925852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0185185, y: 0.0185185, z: 1}
+  m_LocalScale: {x: 0.037, y: 0.037, z: 1}
   m_Children:
   - {fileID: 956077190}
   - {fileID: 997285893}

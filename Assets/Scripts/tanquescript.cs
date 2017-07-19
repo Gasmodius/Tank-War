@@ -5,6 +5,7 @@ using UnityEngine;
 public class tanquescript : MonoBehaviour {
 
 	public GameObject municion;
+	public float velocidad=0.1f;
 
 	public float posx;
 	public float posy;
@@ -16,7 +17,7 @@ public class tanquescript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//disparar ();
+		
 	}
 
 
@@ -28,5 +29,24 @@ public class tanquescript : MonoBehaviour {
 		transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo )) ;
 		
 		Instantiate (municion, transform.position,transform.rotation );
+	}
+
+	public void mover(string direccion){
+		if(direccion.Equals("ARRIBA")){
+
+			transform.position =new Vector3(transform.position.x,transform.position.y+velocidad,transform.position.z);
+
+		}else if(direccion.Equals("ABAJO")){
+
+			transform.position =new Vector3(transform.position.x,transform.position.y-velocidad,transform.position.z);
+
+		}if(direccion.Equals("DER")){
+
+			transform.position =new Vector3(transform.position.x+velocidad,transform.position.y,transform.position.z);
+		
+		}if(direccion.Equals("IZQ")){
+			
+			transform.position =new Vector3(transform.position.x-velocidad,transform.position.y,transform.position.z);
+		}
 	}
 }
