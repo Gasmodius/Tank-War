@@ -8,11 +8,7 @@ public class tanquescript : MonoBehaviour {
 	public GameObject cuerpo;
 	public GameObject municion;
 	public float velocidad=0.1f;
-	//--------para ayudarse--------
-	public float posx;
-	public float posy;
-	public float aux;
-	//-----------------------------
+	private static float pixelxUnidad = 10;//Este valor esta en la Main camara y es 10
 
 	// Use this for initialization
 	void Start () {
@@ -25,16 +21,10 @@ public class tanquescript : MonoBehaviour {
 
 
 	public void disparar(){
-
-		float angulo =-(Mathf.Atan2((Input.mousePosition.x -(Screen.width/2)/96) - transform.position.x, 
-			(Input.mousePosition.y -(Screen.height/2)/54) - transform.position.y )* Mathf.Rad2Deg);
-		//----para ayudarse--------------
-		posx = (Input.mousePosition.x -(Screen.width/2)) ;
-		posy = (Input.mousePosition.y -(Screen.height/2));
-		aux = angulo;
-		//-------------------------------
-		cabeza.transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo )) ;
+		float angulo = -(Mathf.Atan2((Input.mousePosition.x -(Screen.width/2)) - transform.position.x*pixelxUnidad, 
+							(Input.mousePosition.y -(Screen.height/2)) - transform.position.y*pixelxUnidad )* Mathf.Rad2Deg);
 		
+		cabeza.transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo ));
 		Instantiate (municion, transform.position,cabeza.transform.rotation );
 	}
 
