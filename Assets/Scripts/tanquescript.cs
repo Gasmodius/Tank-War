@@ -26,10 +26,11 @@ public class tanquescript : MonoBehaviour {
 
 	public void disparar(){
 
-		float angulo =180-(Mathf.Atan2(transform.position.x - Input.mousePosition.x, transform.position.y - Input.mousePosition.y)*Mathf.Rad2Deg);
+		float angulo =-(Mathf.Atan2((Input.mousePosition.x -(Screen.width/2)/96) - transform.position.x, 
+			(Input.mousePosition.y -(Screen.height/2)/54) - transform.position.y )* Mathf.Rad2Deg);
 		//----para ayudarse--------------
-		posx = Input.mousePosition.x;
-		posy = Input.mousePosition.y;
+		posx = (Input.mousePosition.x -(Screen.width/2)) ;
+		posy = (Input.mousePosition.y -(Screen.height/2));
 		aux = angulo;
 		//-------------------------------
 		cabeza.transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo )) ;
