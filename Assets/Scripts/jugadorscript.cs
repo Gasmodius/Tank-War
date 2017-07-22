@@ -19,21 +19,21 @@ public class jugadorscript : MonoBehaviour {
 
 		}
 
-		if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
+		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
 
-			tanque.SendMessage("mover","IZQ");
+			tanque.SendMessage ("mover", "IZQ");
 
-		}else if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
+		} else if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow)) {
 
-			tanque.SendMessage("mover","ARRIBA");
+			tanque.SendMessage ("mover", "ARRIBA");
 
-		}else if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
+		} else if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow)) {
 
-			tanque.SendMessage("mover","DER");
+			tanque.SendMessage ("mover", "DER");
 
-		}else if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)){
+		} else if (Input.GetKey (KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
 
-			tanque.SendMessage("mover","ABAJO");
+			tanque.SendMessage ("mover", "ABAJO");
 
 		}
 

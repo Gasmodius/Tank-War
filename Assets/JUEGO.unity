@@ -467,7 +467,10 @@ MonoBehaviour:
   cabeza: {fileID: 1139744264}
   cuerpo: {fileID: 1367859792}
   municion: {fileID: 1139999069047374, guid: 10bda89abdc5f40408099f8daf16ebea, type: 2}
-  velocidad: 0.1
+  vmovimiento: 0.1
+  vRotar: 4
+  rotacionAuxiliar: 0
+  aux: 0
 --- !u!1 &997285892
 GameObject:
   m_ObjectHideFlags: 0
