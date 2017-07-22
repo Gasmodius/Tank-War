@@ -45,7 +45,15 @@ public class tanquescript : MonoBehaviour {
 			}else if(anguloZ>(90) && anguloZ<160){
 				rotar ("IZQ");
 			}else{
-				transform.position = new Vector3 (transform.position.x, transform.position.y + vmovimiento, transform.position.z);
+				if ((anguloZ <= 20 && anguloZ>0)||(anguloZ <= 200 && anguloZ>180)) {
+					transform.position = new Vector3 (transform.position.x, transform.position.y + vmovimiento, transform.position.z);
+					rotar ("DER");
+				} else if ((anguloZ >= 340 && anguloZ<360)||(anguloZ >= 160 && anguloZ<180)) {
+					transform.position = new Vector3 (transform.position.x, transform.position.y + vmovimiento, transform.position.z);
+					rotar ("IZQ");
+				} else {
+					transform.position = new Vector3 (transform.position.x, transform.position.y + vmovimiento, transform.position.z);
+				}
 			}
 
 		}else if(direccion.Equals("ABAJO")){
@@ -58,25 +66,41 @@ public class tanquescript : MonoBehaviour {
 			}else if(anguloZ>(90) && anguloZ<160){
 				rotar ("IZQ");
 			}else{
-				transform.position =new Vector3(transform.position.x,transform.position.y-vmovimiento,transform.position.z);
+				if((anguloZ<=20 && anguloZ>0)||(anguloZ <= 200 && anguloZ>180)){
+					transform.position =new Vector3(transform.position.x,transform.position.y-vmovimiento,transform.position.z);
+					rotar ("DER");
+				}else if((anguloZ >= 340 && anguloZ<360)||(anguloZ >= 160 && anguloZ<180)){
+					transform.position =new Vector3(transform.position.x,transform.position.y-vmovimiento,transform.position.z);
+					rotar ("IZQ");
+				}else {
+					transform.position =new Vector3(transform.position.x,transform.position.y-vmovimiento,transform.position.z);
+				}
 			}
 
 		}else if(direccion.Equals("DER")){
-			if (anguloZ > (290) && (anguloZ <= (360) || anguloZ==0)) {
+			if ((anguloZ > (290) && anguloZ <= (360)) || anguloZ==0 || anguloZ==360) {
 				rotar ("DER");
 			}else if(anguloZ<(70) && anguloZ>(0)){
-				rotar("IZQ");
+				rotar("DER");
 			}else if(anguloZ>(110) && anguloZ<=180){
 				rotar("DER");
 			}else if(anguloZ>(180) && anguloZ<250){
 				rotar ("IZQ");
 			}else{
-				transform.position =new Vector3(transform.position.x+vmovimiento,transform.position.y,transform.position.z);
+				if((anguloZ<90 && anguloZ>=70)||(anguloZ<270 && anguloZ>=250)){
+					transform.position =new Vector3(transform.position.x+vmovimiento,transform.position.y,transform.position.z);
+					rotar ("IZQ");
+				}else if((anguloZ>270  && anguloZ<=290)||(anguloZ>90  && anguloZ<=110)){
+					transform.position =new Vector3(transform.position.x+vmovimiento,transform.position.y,transform.position.z);
+					rotar ("DER");
+				}else {
+					transform.position =new Vector3(transform.position.x+vmovimiento,transform.position.y,transform.position.z);
+				}
 			}
 		
 		}else if(direccion.Equals("IZQ")){
 			if (anguloZ > (290) && anguloZ < (360) ) {
-				rotar ("DER");
+				rotar ("IZQ");
 			}else if(anguloZ<(70) && anguloZ>=(0)){
 				rotar("IZQ");
 			}else if(anguloZ>(110) && anguloZ<=180){
@@ -84,7 +108,16 @@ public class tanquescript : MonoBehaviour {
 			}else if(anguloZ>(180) && anguloZ<250){
 				rotar ("IZQ");
 			}else{
-				transform.position =new Vector3(transform.position.x-vmovimiento,transform.position.y,transform.position.z);
+				
+				if((anguloZ<90 && anguloZ>=70)||(anguloZ<270 && anguloZ>=250)){
+					transform.position =new Vector3(transform.position.x-vmovimiento,transform.position.y,transform.position.z);
+					rotar ("IZQ");
+				}else if((anguloZ>270  && anguloZ<=290)||(anguloZ>90  && anguloZ<=110)){
+					transform.position =new Vector3(transform.position.x-vmovimiento,transform.position.y,transform.position.z);
+					rotar ("DER");
+				}else {
+					transform.position =new Vector3(transform.position.x-vmovimiento,transform.position.y,transform.position.z);
+				}
 			}
 
 		}
@@ -92,8 +125,7 @@ public class tanquescript : MonoBehaviour {
 
 	private void rotar(string direccion){
 		if(direccion.Equals("DER")){
-			cuerpo.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, cuerpo.transform.rotation.eulerAngles.z - vRotar));
-
+			cuerpo.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, Mathf.Max(0,cuerpo.transform.rotation.eulerAngles.z - vRotar)));
 		}else if(direccion.Equals("IZQ")){
 			cuerpo.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, cuerpo.transform.rotation.eulerAngles.z + vRotar));
 		}
