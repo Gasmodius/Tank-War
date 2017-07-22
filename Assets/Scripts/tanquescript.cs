@@ -7,8 +7,11 @@ public class tanquescript : MonoBehaviour {
 	public GameObject cabeza;
 	public GameObject cuerpo;
 	public GameObject municion;
-	public float velocidad=0.1f;
+	public float vmovimiento=0.1f;
+	public float vRotar=4f;
 	private static float pixelxUnidad = 10;//Este valor esta en la Main camara y es 10
+
+	public float aux;
 
 	// Use this for initialization
 	void Start () {
@@ -29,22 +32,70 @@ public class tanquescript : MonoBehaviour {
 	}
 
 	public void mover(string direccion){
+		float anguloZ = cuerpo.transform.rotation.eulerAngles.z;
+		aux = anguloZ;
 		if(direccion.Equals("ARRIBA")){
 			
-			transform.position =new Vector3(transform.position.x,transform.position.y+velocidad,transform.position.z);
+			if (anguloZ > (200) && anguloZ < (270)) {
+				rotar ("DER");
+			}else if(anguloZ<(340) && anguloZ>=(270)){
+				rotar("IZQ");
+			}else if(anguloZ>(20) && anguloZ<=90){
+				rotar("DER");
+			}else if(anguloZ>(90) && anguloZ<160){
+				rotar ("IZQ");
+			}else{
+				transform.position = new Vector3 (transform.position.x, transform.position.y + vmovimiento, transform.position.z);
+			}
 
 		}else if(direccion.Equals("ABAJO")){
+			if (anguloZ > (200) && anguloZ < (270)) {
+				rotar ("DER");
+			}else if(anguloZ<(340) && anguloZ>=(270)){
+				rotar("IZQ");
+			}else if(anguloZ>(20) && anguloZ<=90){
+				rotar("DER");
+			}else if(anguloZ>(90) && anguloZ<160){
+				rotar ("IZQ");
+			}else{
+				transform.position =new Vector3(transform.position.x,transform.position.y-vmovimiento,transform.position.z);
+			}
 
-			transform.position =new Vector3(transform.position.x,transform.position.y-velocidad,transform.position.z);
-
-		}if(direccion.Equals("DER")){
-
-			transform.position =new Vector3(transform.position.x+velocidad,transform.position.y,transform.position.z);
+		}else if(direccion.Equals("DER")){
+			if (anguloZ > (290) && (anguloZ <= (360) || anguloZ==0)) {
+				rotar ("DER");
+			}else if(anguloZ<(70) && anguloZ>(0)){
+				rotar("IZQ");
+			}else if(anguloZ>(110) && anguloZ<=180){
+				rotar("DER");
+			}else if(anguloZ>(180) && anguloZ<250){
+				rotar ("IZQ");
+			}else{
+				transform.position =new Vector3(transform.position.x+vmovimiento,transform.position.y,transform.position.z);
+			}
 		
-		}if(direccion.Equals("IZQ")){
-			
-			transform.position =new Vector3(transform.position.x-velocidad,transform.position.y,transform.position.z);
+		}else if(direccion.Equals("IZQ")){
+			if (anguloZ > (290) && anguloZ < (360) ) {
+				rotar ("DER");
+			}else if(anguloZ<(70) && anguloZ>=(0)){
+				rotar("IZQ");
+			}else if(anguloZ>(110) && anguloZ<=180){
+				rotar("DER");
+			}else if(anguloZ>(180) && anguloZ<250){
+				rotar ("IZQ");
+			}else{
+				transform.position =new Vector3(transform.position.x-vmovimiento,transform.position.y,transform.position.z);
+			}
+
 		}
-		//posx = transform.rotation.eulerAngles.z;
+	}
+
+	private void rotar(string direccion){
+		if(direccion.Equals("DER")){
+			cuerpo.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, cuerpo.transform.rotation.eulerAngles.z - vRotar));
+
+		}else if(direccion.Equals("IZQ")){
+			cuerpo.transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y, cuerpo.transform.rotation.eulerAngles.z + vRotar));
+		}
 	}
 }
