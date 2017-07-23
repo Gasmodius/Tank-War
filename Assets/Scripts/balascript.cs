@@ -12,13 +12,17 @@ public class balascript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//rb2d = GetComponent<Rigidbody2D> ();
-
-
 	}
 
 	// Update is called once per frame
 	void Update () {
 		//float velocidadpro = velocidad * Time.deltaTime;
 		transform.Translate (Vector2.up*velocidad);
+	}
+
+	void OnTriggerEnter2D(Collider2D elotro){
+		if (elotro.gameObject.tag.Equals ("ParedExterior")) {
+			Destroy (gameObject);
+		}
 	}
 }
