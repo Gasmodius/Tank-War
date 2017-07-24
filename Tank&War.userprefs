@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets\Scripts\balascript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\jugadorscript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\tanquescript.cs" Line="35" Column="73" />
+      <File FileName="Assets\Scripts\tanquescript.cs" Line="11" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

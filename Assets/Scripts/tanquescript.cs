@@ -9,17 +9,6 @@ public class tanquescript : MonoBehaviour {
 	public GameObject municion;
 	public float vmovimiento=0.1f;
 	public float vRotar=4f;
-	private static float pixelxUnidad = 10;//Este valor esta en la Main camara y es 10
-
-	//Estas variables se usan como apoyo para ver valores------
-	public float xmouse;
-	public float ymouse;
-	public float xt;
-	public float yt;
-	public float aux_angulo_rad;
-	public float aux_angulo_gra;
-	public float auxfinal;
-	//----------------------------------------------------------
 
 	// Use this for initialization
 	void Start () {
@@ -32,20 +21,9 @@ public class tanquescript : MonoBehaviour {
 
 
 	public void disparar(){
-		//Pruebas de valores--------------------------------------------------
-		xmouse=	Input.mousePosition.x -(Screen.width/2);
-		ymouse = Input.mousePosition.y - (Screen.height / 2);
-		xt = transform.position.x * pixelxUnidad;
-		yt=transform.position.y*pixelxUnidad;
-		aux_angulo_rad = Mathf.Atan2 ((Input.mousePosition.x - (Screen.width / 2)) - transform.position.x * pixelxUnidad, (Input.mousePosition.y - (Screen.height / 2)) - transform.position.y * pixelxUnidad);
-		aux_angulo_gra=aux_angulo_rad*Mathf.Rad2Deg;
-		//---------------------------------------------------------
 
-		float angulo = -(Mathf.Atan2((Input.mousePosition.x -(Screen.width/2)) - transform.position.x*pixelxUnidad, 
-							(Input.mousePosition.y -(Screen.height/2)) - transform.position.y*pixelxUnidad )* Mathf.Rad2Deg);
-
-		auxfinal = angulo;//-----------------------------------------
-
+		Vector3 pclick=Camera.main.ScreenToWorldPoint (Input.mousePosition);
+		float angulo = -(Mathf.Atan2(pclick.x - transform.position.x, pclick.y - transform.position.y )* Mathf.Rad2Deg);
 		cabeza.transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo ));
 		Instantiate (municion, transform.position,cabeza.transform.rotation );
 	}
