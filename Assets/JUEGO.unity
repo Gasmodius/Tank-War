@@ -466,10 +466,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cabeza: {fileID: 1139744264}
   cuerpo: {fileID: 1367859792}
-  municion: {fileID: 1197345066946548, guid: 43025f4ff59545a469792ba23ffde96c, type: 2}
+  municion: {fileID: 1324061639692436, guid: 3e86219f2be3fa848aa15441578a461a, type: 2}
   vmovimiento: 0.1
   vRotar: 4
-  aux: 0
+  xmouse: 0
+  ymouse: 0
+  xt: 0
+  yt: 0
+  aux_angulo_rad: 0
+  aux_angulo_gra: 0
+  auxfinal: 0
 --- !u!1 &997285892
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,7 +742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1844871125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -15.76, y: -8.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
