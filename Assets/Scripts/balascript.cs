@@ -19,12 +19,19 @@ public class balascript : MonoBehaviour {
 
 	}
 
-
 	void OnCollisionEnter2D(Collision2D elotro){
 		if (elotro.gameObject.tag.Equals ("Bala")) {
 			Destroy (gameObject);
 
 		}else if(elotro.gameObject.tag.Equals ("Pared")){
+			rebotar ();
+		}
+	}
+
+	public void rebotar(){
+		if (nRebotes <= 0) {
+			Destroy (gameObject);
+		} else {
 			nRebotes--;
 		}
 	}

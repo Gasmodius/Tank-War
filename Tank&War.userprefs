@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\balascript.cs">
     <Files>
-      <File FileName="Assets\Scripts\balascript.cs" Line="28" Column="15" />
+      <File FileName="Assets\Scripts\balascript.cs" Line="22" Column="46" />
       <File FileName="Assets\Scripts\jugadorscript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\tanquescript.cs" Line="1" Column="1" />
     </Files>
