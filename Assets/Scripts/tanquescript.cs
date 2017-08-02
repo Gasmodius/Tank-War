@@ -25,7 +25,12 @@ public class tanquescript : MonoBehaviour {
 		Vector3 pclick=Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		float angulo = -(Mathf.Atan2(pclick.x - transform.position.x, pclick.y - transform.position.y )* Mathf.Rad2Deg);
 		cabeza.transform.rotation=Quaternion.Euler(new Vector3(transform.rotation.x, transform.rotation.y,angulo ));
-		Instantiate (municion, transform.position,cabeza.transform.rotation );
+
+		Vector3 normal = new Vector3 (pclick.x - transform.position.x,pclick.y - transform.position.y,0);
+		normal.Normalize ();
+		float movX = transform.position.x+(normal.x*1.6f);
+		float movY = transform.position.y+(normal.y*1.6f);
+		Instantiate (municion, new Vector3(movX,movY,0),cabeza.transform.rotation );
 	}
 
 	public void mover(string direccion){

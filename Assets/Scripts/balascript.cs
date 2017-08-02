@@ -25,6 +25,9 @@ public class balascript : MonoBehaviour {
 
 		}else if(elotro.gameObject.tag.Equals ("Pared")){
 			rebotar ();
+		}else if(elotro.gameObject.tag.Equals ("Tanque")){
+			Debug.Log ("TE DI");
+			Destroy (gameObject);
 		}
 	}
 
